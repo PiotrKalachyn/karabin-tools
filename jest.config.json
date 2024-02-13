@@ -1,0 +1,29 @@
+{
+  "globals": {
+    "__TRANSFORM_HTML__": true,
+      "ts-jest": {
+      "tsConfigFile": "./tsconfig.spec.json"
+    }
+  },
+  "roots": [
+    "<rootDir>"
+  ],
+  "collectCoverage": true,
+  "collectCoverageFrom": [
+    "**/*.{ts}",
+    "./node_modules/**",
+    "!**/vendor/**",
+    "!jestGlobalMocks.ts",
+    "!setupJest.ts",
+    "!**/test.ts",
+    "!**/index.ts"
+  ],
+  "coveragePathIgnorePatterns": [
+    "typings.d.ts"
+  ],
+  "setupFiles": [
+  ],
+  "moduleNameMapper": {
+  },
+  "setupFilesAfterEnv": ["./setupJest.ts"]
+}
